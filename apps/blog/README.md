@@ -1,87 +1,33 @@
-# Welcome to React Router!
+# ccoli's blog app
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## 스택
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+- structure: monorepo turbo
+- framework : react-router
+- lang : typescript
+- style : tailwind
+- bundler : vite
+- npm package: yarn
+- library or utils:
+  - shadcn
 
-## Features
+## 기능
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+1. 기록 : 모아온 정보와 파편화된 정보를 기록해서 더 나은 내가 되기
+2. 검색 : 최신화된 방식의 검색 기능 적용해보기
+3. 사이드프로젝트로 삼고 싶은 것들을 하나의 app으로 추가하고 소개하기
 
-## Getting Started
+- 그래프 라이브러리, 정적관리 분석, rxjs, utils 라이브러리, webrtc, webcomponent, profile, 로그인, 결제, etc
 
-### Installation
+## 브레인스토밍
 
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+- md활용한 가장 효율적인 editor 사용
+- ai 이용한 검색 기능 구현
+- 각종 기능들 구현들을 monorepo의 하나의 app들로
+- 그동안 모아온 자료들을 정리해보기
+- 댓글기능
+- 메뉴: 포스트, resume,
+- 작성하기
+- 수정하기
+- 통계
+- dark모드

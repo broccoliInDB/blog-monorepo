@@ -1,84 +1,40 @@
-# Turborepo starter
+# ccoli's blog mono repo
 
-This Turborepo starter is maintained by the Turborepo core team.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+# commit prefix rules
 
 ```
-cd my-turborepo
-pnpm build
+# Git Commit Prefix 목록
+
+## 1. 기능 관련
+- `feat:` - 새로운 기능 추가
+- `fix:` - 버그 수정
+- `docs:` - 문서 수정
+- `style:` - 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우
+- `refactor:` - 코드 리팩토링
+- `perf:` - 성능 개선
+- `test:` - 테스트 코드 추가/수정
+- `chore:` - 빌드 업무 수정, 패키지 매니저 수정
+
+## 2. 구조 관련
+- `build:` - 빌드 시스템 또는 외부 종속성에 영향을 미치는 변경사항
+- `ci:` - CI 설정 파일 및 스크립트 변경
+- `revert:` - 이전 커밋으로 되돌리기
+
+## 3. 배포 관련
+- `release:` - 릴리즈 버전
+- `deploy:` - 배포 관련 변경사항
+
+## 4. 보안 관련
+- `security:` - 보안 관련 변경사항
+
+## 5. 기타
+- `wip:` - Work In Progress (작업 중)
+- `draft:` - 초안
+
+## 사용 규칙
+- prefix는 소문자로 작성
+- prefix 뒤에 콜론(:)과 공백 추가
+- 메시지는 현재형으로 작성
+- 첫 글자는 대문자로 시작
+- 마지막에 마침표(.) 생략
 ```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)

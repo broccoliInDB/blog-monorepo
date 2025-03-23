@@ -8,12 +8,15 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "blog:install": "turbo run install --filter=blog",
-    "blog:dev": "turbo run dev --filter=blog",
-    "blog:build": "turbo run build --filter=blog",
-    "blog:lint": "turbo run lint --filter=blog",
-    "blog:format": "turbo run format --filter=blog",
-    "blog:check-types": "turbo run check-types --filter=blog"
+    "blog:install": "yarn workspace apps/blog install",
+    "blog:dev": "yarn workspace apps/blog dev",
+    "blog:build": "yarn workspace apps/blog build",
+    "blog:lint": "yarn workspace apps/blog lint",
+    "blog:format": "yarn workspace apps/blog format",
+    "blog:check-types": "turbo run check-types --filter=blog",
+    "blog:db:generate": "yarn workspace blog db:generate",
+    "blog:db:migrate": "yarn workspace blog db:migrate",
+    "blog:db:studio": "yarn workspace blog db:studio"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
